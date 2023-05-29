@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.MainControllerMedic">
+   <children>
+      <TableView fx:id="tblVwComenzi" layoutX="339.0" layoutY="72.0" prefHeight="200.0" prefWidth="227.0">
+        <columns>
+          <TableColumn fx:id="tblColId" prefWidth="75.0" text="IdComanda" />
+          <TableColumn fx:id="tblColSectie" prefWidth="75.0" text="Sectie" />
+            <TableColumn fx:id="tblColStatus" prefWidth="75.0" text="Status" />
+        </columns>
+      </TableView>
+      <Label layoutX="404.0" layoutY="34.0" text="Comenzi:" />
+      <Label layoutX="41.0" layoutY="163.0" text="Medicament:" />
+      <ComboBox fx:id="cmbBoxMedicament" layoutX="149.0" layoutY="159.0" prefWidth="150.0" />
+      <Label layoutX="50.0" layoutY="200.0" text="Cantitate:" />
+      <TextField fx:id="txtFldCantitate" layoutX="149.0" layoutY="196.0" />
+      <Button fx:id="btnPlaseazaComanda" layoutX="29.0" layoutY="360.0" mnemonicParsing="false" onAction="#onPlaseazaComanda" text="Plaseaza comanda!" />
+      <Button fx:id="btnStergeComanda" layoutX="400.0" layoutY="360.0" mnemonicParsing="false" onAction="#onStergeComanda" text="Sterge comanda!" />
+      <Label layoutX="51.0" layoutY="25.0" text="Sectia:">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="43.0" layoutY="63.0" text="Medic logat:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnLogOut" layoutX="53.0" layoutY="111.0" mnemonicParsing="false" onAction="#onLogOut" text="Logout" />
+      <Button fx:id="btnAddElemComanda" layoutX="102.0" layoutY="288.0" mnemonicParsing="false" onAction="#onAdaugaElemComanda" text="Adauga element la comanda" />
+      <Label fx:id="lblMedic" layoutX="158.0" layoutY="67.0" text="Label" />
+      <Label layoutX="53.0" layoutY="240.0" text="Observatii:" />
+      <TextField fx:id="txtFldObservatii" layoutX="149.0" layoutY="236.0" />
+      <Button fx:id="btnDetaliiComanda" layoutX="427.0" layoutY="288.0" mnemonicParsing="false" onAction="#onDetaliiComanda" text="Detalii comanda" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.DetaliiCmdController">
+   <children>
+      <Label layoutX="45.0" layoutY="24.0" text="Comanda actuala:" />
+      <TableView fx:id="tblVwElemCmd" layoutX="38.0" layoutY="100.0" prefHeight="200.0" prefWidth="538.0">
+        <columns>
+            <TableColumn fx:id="tblColId" prefWidth="114.66665649414062" text="Id" />
+          <TableColumn fx:id="tblColMed" prefWidth="114.66665649414062" text="NumeMedicament" />
+          <TableColumn fx:id="tblcColCantitate" prefWidth="92.66668701171875" text="Cantitate" />
+            <TableColumn fx:id="tblColObservatii" prefWidth="120.0" text="Observatii" />
+            <TableColumn fx:id="tblColCoamnadaRef" prefWidth="66.66668701171875" text="Comanda" />
+        </columns>
+      </TableView>
+      <Label layoutX="45.0" layoutY="70.0" text="Elementele comenzii:" />
+      <Label layoutX="45.0" layoutY="308.0" text="Id:" />
+      <TextField fx:id="txtFldlId" layoutX="150.0" layoutY="304.0" />
+      <TextField fx:id="txtFldCantitateNoua" layoutX="150.0" layoutY="347.0" />
+      <Label layoutX="31.0" layoutY="351.0" text="Cantitate noua:" />
+      <Button fx:id="btnUpdateCant" layoutX="373.0" layoutY="335.0" mnemonicParsing="false" onAction="#onUpdateCantitate" text="Actualizare cantitate" />
+   </children>
+</AnchorPane>
