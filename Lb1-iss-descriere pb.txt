@@ -1,0 +1,26 @@
+FARMACIE SPITAL 
+
+Un spital are o farmacie proprie si mai multe sectii. Necesarul de medicamente pe sectii este deservit de catre farmacia spitalului. Spitalul  pune  la  dispozitia  acestora  o  aplicatie  pentru  gestiunea comenzilor de medicamente ale sectiilor si onorarea acestor comenzi din partea farmaciei. 
+Aplicatia este compusa din: 
+•mai  multe  terminale  localizate  in  fiecare  sectie: 
+	Pentru ca un medic sa poata plasa o comanda, este nevoie sa se autentifice: sa selecteze sectia, sa completeze un email si o parola. Odata autentificat, se vor putea plasa comenzi doar in sectia in care este logat, neavand acces la restul sectiilor.
+	Personalul medical de pe sectii foloseste aceste terminale pentru a inregistra comenzile de medicamente, vor fi disponibile 3 campuri pentru a completa detaliile unui element de comanda: un element de comanda  refera medicametul dorit și cantitatea  solicitata si sectia din care a fost emisa comanda, iar mai apoi se va actiona un buton de emitere comanda. De pe o sectie se pot înregistra oricâte comenzi. Imediat dupa inregistrarea unei comenzii, aceasta poate fi consultata la farmacie.
+ •un  terminal  pentru  farmacie: 
+	Pentru ca un farmacist sa poata vedea lista de comenzi, este necesar sa se logheze mai intai cu email-ul si parola si sa selecteze sectia de unde doreste sa preia comenzi.
+	 Farmacistii  observa  lista  comenzilor  facute  de  pe  sectii(sub forma medicament, cantitate si sectia de unde s-a plasat comanda), prioritizata după momentul sosirii acestora.
+Pentru onorarea unei comenzi, farmacistul o selecteaza din lista, (pregateste medicamentele si le trimite pe sectii) dupa care declanseaza un buton "comanda onorata". În urma acestei acțiuni, comanda este eliminata din lista afisata de farmacie si apare ca si onorata in fereastra sectiei care a inițiat-o.
+
+Actori: 
+	- medic
+	- farmacist
+
+Use case-uri:
+	- autentificare (comuna pt medic si farmacist + completeaza la postconditii ce se intampla diferit pt fiecare)
+	- inregistrare comanda de medicamente (medic)
+	- revocare o comanda de medicamente (medic)
+	- actualizare cantitate comanda (medic)
+	- vizualizare lista comenzi pe o sectie (farmacist + medic)
+	- onoreaza comanda (farmacist)
+	- adaugare medicament (farmacist)
+	- modificare cantitate din stoc (farmacist)
+	- stergere medicament (farmacist)
