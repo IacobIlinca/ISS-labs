@@ -1,8 +1,0 @@
-rootProject.name = 'farmaciespital-iss'
-include 'Model'
-include 'Persistance'
-include 'Server'
-include 'Networking'
-include 'Service'
-include 'Client'
-

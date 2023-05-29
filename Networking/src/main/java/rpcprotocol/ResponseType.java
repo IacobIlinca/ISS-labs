@@ -1,7 +1,0 @@
-package rpcprotocol;
-
-import java.io.Serializable;
-
-public enum ResponseType implements Serializable {
-    OK, ERROR, LOGGED_IN_MEDIC, LOGGED_IN_FARMACIST, LOGGED_OUT_MEDIC, LOGGED_OUT_FARMACIST, ADDED_COMANDA, FOUND_ALL_COMANDA, FOUND_ALL_MEDICAMENTE, FOUND_ALL_MEDICI, FOUND_MEDICAMENT_BY_DENUMIRE
-}
